@@ -18,8 +18,9 @@ public class Employee {
     public Employee(int age, String name){
         this.age = age;
         this.name = name;
-        employeeId = 1234 + employeeCount;
+        employeeId = 123456 + employeeCount;
         employed = true;
+        System.out.println("ID number for " + name + ": " + employeeId);
     }
     
     public int getAge(){

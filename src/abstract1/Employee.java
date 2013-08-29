@@ -8,6 +8,9 @@ package abstract1;
  *
  * @author Andy
  */
-public class Employee {
+public abstract class Employee {
     
+    public static int employeeCount = 0;
+    
+    public abstract void terminateEmployee(int employeeId);
 }

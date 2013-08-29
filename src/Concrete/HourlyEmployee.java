@@ -30,6 +30,4 @@ public class HourlyEmployee extends Employee {
         
         return paycheck;
     }
-    
-    
 }
