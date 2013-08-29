@@ -18,12 +18,11 @@ public class HourlyEmployee extends Employee{
     private int hours;
     private double paycheck;
 
-    public HourlyEmployee(String name, int age, double payRate, int hours, double paycheck) {
+    public HourlyEmployee(String name, int age, double payRate, int hours) {
         this.name = name;
         this.age = age;
         this.payRate = payRate;
         this.hours = hours;
-        this.paycheck = paycheck;
         employeeId = 123456 + employeeCount;
         employed = true;
     }
