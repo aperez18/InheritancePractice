@@ -12,10 +12,12 @@ public class SalariedEmployee extends Employee {
     private double salary;
     private boolean vacation = false;
 
-    public SalariedEmployee(double salary, int age, String name) {
-        super(age, name);
+    public SalariedEmployee(double salary, int age, String firstName, String lastName) {
+        super(age, firstName, lastName);
         this.salary = salary;
     }
+
+    
     
     public void onVacation(){
         vacation = true;

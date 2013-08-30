@@ -13,10 +13,9 @@ public class HourlyEmployee extends Employee {
     private double payRate;
     private int hours;
     private double paycheck;
-    
-    public HourlyEmployee(int hours, int age, String name, double payRate) {
-        super(age, name);
-        
+
+    public HourlyEmployee(double payRate, int hours, int age, String firstName, String lastName) {
+        super(age, firstName, lastName);
         this.payRate = payRate;
         this.hours = hours;
     }

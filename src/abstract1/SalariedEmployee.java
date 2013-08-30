@@ -12,15 +12,10 @@ public class SalariedEmployee extends Employee {
     
     private double salary;
     private boolean vacation = false;
-    private int age;
-    private String name;
-    private boolean employed;
 
-    public SalariedEmployee(double salary, int age, String name) {
+    public SalariedEmployee(double salary, int age, String firstName, String lastName, int employeeId) {
+        super(age, firstName, lastName, employeeId);
         this.salary = salary;
-        this.age = age;
-        this.name = name;
-        employed = true;
     }
     
     public void onVacation(){
@@ -34,13 +29,8 @@ public class SalariedEmployee extends Employee {
         salary+= raise;
     }
     
+    @Override
     public double getPaycheck(){
         return salary/26;
-    }
-    
-    @Override
-    public void terminateEmployee(int employeeId){
-        Employee.employeeCount--;
-        employed = false;
     }
 }
