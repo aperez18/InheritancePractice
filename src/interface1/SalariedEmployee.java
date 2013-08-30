@@ -15,13 +15,15 @@ public class SalariedEmployee implements Employee {
     private double salary;
     private boolean vacation = false;
     private int age;
-    private String name;
+    private String firstName;
+    private String lastName;
     private boolean employed;
 
-    public SalariedEmployee(double salary, int age, String name) {
+    public SalariedEmployee(double salary, int age, String firstName, String lastName) {
         this.salary = salary;
         this.age = age;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
         salariedEmployeeCount++;
         employeeId = 223456 + salariedEmployeeCount;
         employed = true;
@@ -39,6 +41,7 @@ public class SalariedEmployee implements Employee {
         salary+= raise;
     }
     
+    @Override
     public double getPaycheck(){
         return salary/26;
     }
@@ -56,8 +59,13 @@ public class SalariedEmployee implements Employee {
     }
     
     @Override
-    public String getName(){
-        return name;
+    public String getFirstName(){
+        return firstName;
+    }
+    
+    @Override
+    public String getLastName(){
+        return lastName;
     }
     
     @Override

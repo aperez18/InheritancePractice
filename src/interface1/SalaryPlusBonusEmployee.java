@@ -12,8 +12,8 @@ public class SalaryPlusBonusEmployee extends SalariedEmployee{
     private double bonus;
     private double bonusCheck;
 
-    public SalaryPlusBonusEmployee(double bonus, double salary, int age, String name) {
-        super(salary, age, name);
+    public SalaryPlusBonusEmployee(double bonus, double salary, int age, String firstName, String lastName) {
+        super(salary, age, firstName, lastName);
         this.bonus = bonus;
     }
 

@@ -12,16 +12,18 @@ public class HourlyEmployee implements Employee {
     
     public static int hourlyEmployeeCount=0;
     private int age;
-    private String name;
+    private String firstName;
+    private String lastName;
     private int employeeId;
     private boolean employed;
     private int hours;
     private double payRate;
     private double paycheck;
 
-    public HourlyEmployee(int age, String name, int hours, double payRate) {
+    public HourlyEmployee(int age, String firstName, String lastName, int hours, double payRate) {
         this.age = age;
-        this.name = name;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.hours = hours;
         this.payRate = payRate;
         hourlyEmployeeCount++;
@@ -41,8 +43,13 @@ public class HourlyEmployee implements Employee {
     }
     
     @Override
-    public String getName(){
-        return name;
+    public String getFirstName(){
+        return firstName;
+    }
+    
+    @Override
+    public String getLastName(){
+        return lastName;
     }
     
     @Override
@@ -54,6 +61,7 @@ public class HourlyEmployee implements Employee {
         return employed;
     }
     
+    @Override
     public double getPaycheck(){
         if(hours <= 40){
             paycheck = hours*payRate;

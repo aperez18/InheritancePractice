@@ -14,7 +14,9 @@ public interface Employee {
     
     public abstract void giveRaise(double raise);
     
-    public String getName();
-    public int getAge();
-    public int getEmployeeId();
+    public abstract String getFirstName();
+    public abstract String getLastName();
+    public abstract int getAge();
+    public abstract int getEmployeeId();
+    public abstract double getPaycheck();
 }

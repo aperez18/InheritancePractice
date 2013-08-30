@@ -30,6 +30,11 @@ public class SalariedEmployee extends Employee {
     }
     
     @Override
+    public void giveRaise(double raise){
+        salary+=raise;
+    }
+    
+    @Override
     public double getPaycheck(){
         return salary/26;
     }

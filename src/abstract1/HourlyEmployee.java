@@ -21,6 +21,11 @@ public class HourlyEmployee extends Employee{
     }  
     
     @Override
+    public void giveRaise(double raise){
+        payRate+=raise;
+    }
+    
+    @Override
     public double getPaycheck(){
         if(hours <= 40){
             paycheck = hours*payRate;

@@ -25,6 +25,7 @@ public abstract class Employee {
     }
         
     public abstract double getPaycheck();
+    public abstract void giveRaise(double raise);
 
     public int getAge() {
         return age;
