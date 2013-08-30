@@ -17,11 +17,14 @@ public abstract class Employee {
     private int employeeId;
     private boolean employed;
 
-    public Employee(int age, String firstName, String lastName, int employeeId) {
+    public Employee(int age, String firstName, String lastName) {
         this.age = age;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.employeeId = employeeId;
+        employeeCount++;
+        employeeId = 123456 + employeeCount;
+        System.out.println("ID number for " + firstName + " " + lastName 
+                + ": " + employeeId);
     }
         
     public abstract double getPaycheck();

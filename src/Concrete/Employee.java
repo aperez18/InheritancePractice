@@ -20,6 +20,7 @@ public class Employee {
         this.age = age;
         this.firstName = firstName;
         this.lastName = lastName;
+        Employee.employeeCount++;
         employeeId = 123456 + employeeCount;
         employed = true;
         System.out.println("ID number for " + firstName + " " + lastName 

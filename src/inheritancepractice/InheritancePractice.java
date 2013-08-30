@@ -4,10 +4,12 @@
  */
 package inheritancepractice;
 
-// testing
-//import Concrete.SalaryPlusBonusEmployee;
-// testing
-
+/*testing
+*import Concrete.*;
+*import abstract1.*;
+*import interface1.*;
+*testing
+*/
 /**
  *
  * @author Andy
@@ -18,9 +20,12 @@ public class InheritancePractice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        /* testing
-        SalaryPlusBonusEmployee spbEmployee1 = new SalaryPlusBonusEmployee(100.0, 30000.0, 25, "Nala the Cat");
-        System.out.println(spbEmployee1.getBonusPaycheck(spbEmployee1));
-        testing */
+        /*testing
+        SalaryPlusBonusEmployee e1 = new SalaryPlusBonusEmployee(1999.99, 100000.79, 21, "Nala", "Cat");
+        
+        System.out.println(e1.getPaycheck());
+        System.out.println(e1.getEmployeeId());
+        testing
+        */
     }
 }
